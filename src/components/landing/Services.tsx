@@ -13,7 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     icon: Printer,
-    image: "src/assets/impressao.png",
+    image: "/assets/impressao.png",
     title: "Impressões e Fotocópias",
     description:
       "Impressões coloridas e P&B de alta qualidade em diversos formatos.",
@@ -21,7 +21,7 @@ const services = [
   },
   {
     icon: Palette,
-    image: "src/assets/toners.png",
+    image: "/assets/toners.png",
     title: "Toners e Cartuchos",
     description:
       "Recargas e vendas de toners e cartuchos para todas as marcas.",
@@ -29,14 +29,14 @@ const services = [
   },
   {
     icon: Key,
-    image: "src/assets/chaves.png",
+    image: "/assets/chaves.png",
     title: "Cópia de Chaves",
     description: "Cópias de chaves residenciais, automotivas e especiais.",
     color: "rainbow-yellow",
   },
   {
     icon: BookOpen,
-    image: "src/assets/encadernacao.png",
+    image: "/assets/encadernacao.png",
     title: "Encadernação",
     description:
       "Encadernações profissionais para trabalhos, TCC e documentos.",
@@ -44,7 +44,7 @@ const services = [
   },
   {
     icon: Sparkles,
-    image: "src/assets/plastificacao.png",
+    image: "/assets/plastificacao.png",
     title: "Plastificação",
     description:
       "Plastificação de documentos para maior durabilidade e proteção.",
@@ -52,21 +52,21 @@ const services = [
   },
   {
     icon: Tag,
-    image: "src/assets/personalizacao.png",
+    image: "/assets/personalizacao.png",
     title: "Personalização",
     description: "Carimbos personalizados, etiquetas e materiais customizados.",
     color: "rainbow-purple",
   },
   {
     icon: Smartphone,
-    image: "src/assets/acessorios.png",
+    image: "/assets/acessorios.png",
     title: "Acessórios para Celular",
     description: "Capas, películas, carregadores e diversos acessórios.",
     color: "rainbow-red",
   },
   {
     icon: Wrench,
-    image: "src/assets/servicos.png",
+    image: "/assets/servicos.png",
     title: "Serviços para Celular",
     description: "Manutenção e reparos de smartphones e tablets.",
     color: "rainbow-orange",

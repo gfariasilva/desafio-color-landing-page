@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# 🖨️ Desafio Color Landing Page
 
-## Project info
+A modern, responsive landing page for a stationery and printing business. This project showcases services such as printing, toner refills, key copying, and mobile repair using a clean, colorful interface.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Built with **React**, **TypeScript**, and **Tailwind CSS**, and deployed automatically via **Firebase Hosting**.
 
-## How can I edit this code?
+## 🚀 Technologies Used
 
-There are several ways of editing your application.
+* **[React](https://react.dev/)**: Frontend library for building the user interface.
+* **[TypeScript](https://www.typescriptlang.org/)**: For type-safe code and better developer experience.
+* **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid styling.
+* **[Firebase Hosting](https://firebase.google.com/products/hosting)**: Fast and secure static hosting.
 
-**Use Lovable**
+## 🎨 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* **Responsive Grid Layout**: Services are displayed in a grid that adapts from mobile (1 column) to desktop (4 columns).
+* **Interactive UI**: Hover effects, fade-in animations, and "rainbow" color themes for different service categories.
+* **Asset Optimization**: Images served directly from the public directory for optimal performance.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+Make sure you have **Node.js** installed on your machine.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/gfariasilva/desafio-color-landing-page.git
+    cd desafio-color-landing-page
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🔥 Firebase Integration & Deployment
+
+This project uses **Firebase Hosting** for deployment. The configuration is handled via `firebase.json`.
+
+### 1. Build Configuration
+The project is configured to deploy the production build.
+* **Source Code**: `/src`
+* **Public Assets**: `/public`
+* **Output Folder**: `/dist` 
+
+### 2. Manual Deployment
+To deploy the site manually from your terminal:
+
+1.  Create the production build:
+    ```bash
+    npm run build
+    ```
+2.  Deploy to Firebase:
+    ```bash
+    firebase deploy
+    ```
+
+### 3. CI/CD (GitHub Actions)
+Automatic deployment is set up. Pushing to the `main` branch will trigger a workflow that builds the app and deploys it to Firebase Hosting automatically.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── public/              # Static assets (images, etc.)
+├── src/
+│   ├── components/      # React components (ui/card, etc.)
+│   ├── assets/          # Importable assets (svgs, small icons)
+│   ├── App.tsx          # Main application entry
+│   └── main.tsx         # DOM rendering
+├── firebase.json        # Firebase hosting configuration
+├── tailwind.config.js   # Tailwind customization
+└── package.json         # Dependencies and scripts
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
