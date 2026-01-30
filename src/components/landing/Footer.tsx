@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Desafio Color" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="Desafio Color" className="h-24 w-auto mb-4" />
             <p className="text-background/70 text-sm mb-4">
               Há 16 anos oferecendo o melhor em impressões, papelaria e serviços 
               para você e sua empresa.
