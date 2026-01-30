@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <img src={logo} alt="Desafio Color" className="h-24 w-auto mb-4" />
             <p className="text-background/70 text-sm mb-4">
-              Desde 2001 anos oferecendo o melhor em impressões, papelaria e serviços 
+              Desde 2001 oferecendo o melhor em impressões, papelaria e serviços
               para você e sua empresa.
             </p>
             <div className="flex items-center gap-2 text-background/70 text-sm">
