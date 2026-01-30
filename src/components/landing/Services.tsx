@@ -13,7 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     icon: Printer,
-    image: "/assets/impressao.png",
+    image: "/impressao.png",
     title: "Impressões e Fotocópias",
     description:
       "Impressões coloridas e P&B de alta qualidade em diversos formatos.",
@@ -21,7 +21,7 @@ const services = [
   },
   {
     icon: Palette,
-    image: "/assets/toners.png",
+    image: "/toners.png",
     title: "Toners e Cartuchos",
     description:
       "Recargas e vendas de toners e cartuchos para todas as marcas.",
@@ -29,14 +29,14 @@ const services = [
   },
   {
     icon: Key,
-    image: "/assets/chaves.png",
+    image: "/chaves.png",
     title: "Cópia de Chaves",
     description: "Cópias de chaves residenciais, automotivas e especiais.",
     color: "rainbow-yellow",
   },
   {
     icon: BookOpen,
-    image: "/assets/encadernacao.png",
+    image: "/encadernacao.png",
     title: "Encadernação",
     description:
       "Encadernações profissionais para trabalhos, TCC e documentos.",
@@ -44,7 +44,7 @@ const services = [
   },
   {
     icon: Sparkles,
-    image: "/assets/plastificacao.png",
+    image: "/plastificacao.png",
     title: "Plastificação",
     description:
       "Plastificação de documentos para maior durabilidade e proteção.",
@@ -52,21 +52,21 @@ const services = [
   },
   {
     icon: Tag,
-    image: "/assets/personalizacao.png",
+    image: "/personalizacao.png",
     title: "Personalização",
     description: "Carimbos personalizados, etiquetas e materiais customizados.",
     color: "rainbow-purple",
   },
   {
     icon: Smartphone,
-    image: "/assets/acessorios.png",
+    image: "/acessorios.png",
     title: "Acessórios para Celular",
     description: "Capas, películas, carregadores e diversos acessórios.",
     color: "rainbow-red",
   },
   {
     icon: Wrench,
-    image: "/assets/servicos.png",
+    image: "/servicos.png",
     title: "Serviços para Celular",
     description: "Manutenção e reparos de smartphones e tablets.",
     color: "rainbow-orange",
