@@ -1,9 +1,9 @@
 const brands = [
   { name: "HP", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/150px-HP_logo_2012.svg.png" },
-  { name: "Brother", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Brother_logo.svg/200px-Brother_logo.svg.png" },
-  { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/200px-Samsung_Logo.svg.png" },
-  { name: "Lexmark", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lexmark_logo.svg/200px-Lexmark_logo.svg.png" },
-  { name: "Epson", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Epson_logo.svg/200px-Epson_logo.svg.png" },
+  { name: "Brother", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Brother_logo.svg/1280px-Brother_logo.svg.png" },
+  { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Samsung_old_logo_before_year_2015.svg/1280px-Samsung_old_logo_before_year_2015.svg.png" },
+  { name: "Lexmark", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Lexmark-primary-logo.svg/1280px-Lexmark-primary-logo.svg.png" },
+  { name: "Epson", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Epson_logo.svg/960px-Epson_logo.svg.png" },
 ];
 
 const Brands = () => {
