@@ -10,39 +10,34 @@ import {
 
 const testimonials = [
   {
-    name: "Maria Silva",
-    role: "Cliente desde 2018",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+    name: "Renato Mateus",
+    role: "Cliente desde 2022",
     rating: 5,
-    text: "Excelente atendimento! Sempre que preciso de impressões urgentes, a Desafio Color me atende com qualidade e rapidez. Recomendo!",
+    text: "Utilizamos os produtos da DESAFIO COLOR à 3 anos e em todo esse tempo sempre fomos bem atendidos e os produtos são de muita qualidade. Pode confiar!",
   },
   {
-    name: "João Santos",
-    role: "Empresário",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80",
+    name: "Rodolpho de Moura Mota",
+    role: "Cliente desde 2020",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjW5uK4s-1Y30u8PodSpkOuijcBHchcA9hWgvHFMUoYn_X4oZeOmSg=w90-h90-p-rp-mo-ba2-br100",
     rating: 5,
-    text: "Faço todas as cópias de chaves da minha empresa aqui. Serviço rápido e preço justo. A equipe é muito prestativa.",
+    text: "Pessoas profissionais, ágeis e competentes, fora que o valor que cabe no bolso.",
   },
   {
-    name: "Ana Costa",
-    role: "Estudante",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80",
+    name: "Danilo Bernardo",
+    role: "Cliente desde 2021",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVOZY1CttFr7d1HKvgHOonjeQ-23dxFzRMxslqdHrvK3afHGXc=w90-h90-p-rp-mo-br100",
     rating: 5,
-    text: "Encadernei meu TCC aqui e ficou perfeito! A plastificação também ficou excelente. Super indico para outros estudantes.",
+    text: "Atendimento rápido, ótimo serviço e valores competitivos.",
   },
   {
-    name: "Carlos Oliveira",
-    role: "Designer Gráfico",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80",
+    name: "Potiguar Contabilidade",
+    role: "Cliente desde 2005",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjU74R8MjIG5ix4KEMiWwsP-GqPZsB284KkGJrahoNxXYB3aqo0=w90-h90-p-rp-mo-ba4-br100",
     rating: 5,
-    text: "A qualidade das impressões é impecável. Os toners que compro aqui duram muito e a cor fica perfeita. Parceria de anos!",
-  },
-  {
-    name: "Fernanda Lima",
-    role: "Professora",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80",
-    rating: 5,
-    text: "Sempre faço minhas apostilas e materiais didáticos na Desafio Color. Preço bom e qualidade excelente. Atendimento nota 10!",
+    text: "Utilizamos os serviços da Desafio a pelo menos uns 20 anos! Cartuchos, Sulfite, Carimbos enfim....Excelentes! Produtos de qualidade, comprometimento e preço! Indico a todos. Muito Obrigado!!!",
   },
 ];
 
@@ -59,7 +54,20 @@ const Testimonials = () => {
             Depoimentos de <span className="rainbow-text">Clientes</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Veja o que nossos clientes satisfeitos têm a dizer sobre nossos serviços.
+            Veja o que nossos clientes satisfeitos têm a dizer sobre nossos
+            serviços.
+          </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Veja{" "}
+            <a 
+              href="https://www.google.com/search?sca_esv=5cf68b8f0ed15ed3&sxsrf=ANbL-n5ofa25MGP5V8FpHJ36-BoYovCQqQ:1770042523619&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYHJp8OBOGz1ejjf-1y-JNtDepqIhn-_nRX2FG4Jd8Xvvg2VjQY1i6WJozA-H10ucSSxAUGI9GpC-PHA7stwkBGjnfKFafuJ127a5d7QElx4-trLOJhb0A6WT96zMk2SM-B_4ZfhTGjpOjUOJL5aqUUlNuah2gI6HMFALJPe8s7U1bE8YcU_9ex_25q0aoFTXaPW_gbWM_CUkf6-yP9bjFMdSBJhMdxtjvARc6LZt4tb8RzZnw%3D%3D&q=DESAFIO+COLOR+Toner/Cartuchos/Tintas+-+Servi%C3%A7os+de+Copiadora/Encaderna%C3%A7%C3%A3o/Plastifica%C3%A7%C3%A3o/Digitaliza%C3%A7%C3%A3o+-+Carimbos+Reviews&sa=X&ved=2ahUKEwiS_e2egruSAxXvCrkGHSJrGaIQ0bkNegQIJBAF&biw=1528&bih=738&dpr=1.25&aic=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-semibold underline underline-offset-4 decoration-primary/30 hover:decoration-primary transition-all"
+            >
+              aqui
+            </a>{" "}
+            todas as avaliações de clientes!
           </p>
         </div>
 
@@ -73,7 +81,7 @@ const Testimonials = () => {
             className="w-full"
           >
             <CarouselContent className="-ml-4">
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <CarouselItem
                   key={testimonial.name}
                   className="pl-4 md:basis-1/2 lg:basis-1/3"
@@ -81,8 +89,7 @@ const Testimonials = () => {
                   <Card className="h-full border-2 border-border hover:border-primary/30 transition-colors">
                     <CardContent className="p-6 flex flex-col h-full">
                       <Quote className="w-8 h-8 text-primary/20 mb-4" />
-                      
-                      {/* Rating */}
+
                       <div className="flex gap-1 mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
                           <Star
@@ -92,18 +99,22 @@ const Testimonials = () => {
                         ))}
                       </div>
 
-                      {/* Text */}
                       <p className="text-muted-foreground text-sm flex-1 mb-6">
                         "{testimonial.text}"
                       </p>
 
-                      {/* Author */}
                       <div className="flex items-center gap-3 pt-4 border-t border-border">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.name}
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
+                        {testimonial.image ? (
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            className="w-12 h-12 rounded-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shrink-0">
+                            {testimonial.name.charAt(0).toUpperCase()}
+                          </div>
+                        )}
                         <div>
                           <p className="font-semibold text-foreground text-sm">
                             {testimonial.name}
