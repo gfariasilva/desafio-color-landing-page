@@ -1,3 +1,4 @@
+import { useState } from "react"; // 1. Import useState
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -35,11 +36,34 @@ const testimonials = [
     name: "Potiguar Contabilidade",
     role: "Cliente desde 2005",
     image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjU74R8MjIG5ix4KEMiWwsP-GqPZsB284KkGJrahoNxXYB3aqo0=w90-h90-p-rp-mo-ba4-br100",
+      "https://lh3.googleusercontent.com/a-/ALV-UjU74R8MjIG5ix4KEMiWwsP-GqPZsB284KkGJrahoNxXYB3aqo0=w90-h90-p-rp-mo-ba4-br100", // This might fail if the URL is old
     rating: 5,
     text: "Utilizamos os serviços da Desafio a pelo menos uns 20 anos! Cartuchos, Sulfite, Carimbos enfim....Excelentes! Produtos de qualidade, comprometimento e preço! Indico a todos. Muito Obrigado!!!",
   },
 ];
+
+// Helper Component to handle Image Error logic
+const UserAvatar = ({ name, image }: { name: string; image?: string }) => {
+  const [hasError, setHasError] = useState(false);
+
+  if (image && !hasError) {
+    return (
+      <img
+        src={image}
+        alt={name}
+        className="w-12 h-12 rounded-full object-cover"
+        onError={() => setHasError(true)}
+      />
+    );
+  }
+
+  // Fallback (Initials)
+  return (
+    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shrink-0">
+      {name.charAt(0).toUpperCase()}
+    </div>
+  );
+};
 
 const Testimonials = () => {
   return (
@@ -59,7 +83,7 @@ const Testimonials = () => {
           </p>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Veja{" "}
-            <a 
+            <a
               href="https://www.google.com/search?sca_esv=5cf68b8f0ed15ed3&sxsrf=ANbL-n5ofa25MGP5V8FpHJ36-BoYovCQqQ:1770042523619&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOYHJp8OBOGz1ejjf-1y-JNtDepqIhn-_nRX2FG4Jd8Xvvg2VjQY1i6WJozA-H10ucSSxAUGI9GpC-PHA7stwkBGjnfKFafuJ127a5d7QElx4-trLOJhb0A6WT96zMk2SM-B_4ZfhTGjpOjUOJL5aqUUlNuah2gI6HMFALJPe8s7U1bE8YcU_9ex_25q0aoFTXaPW_gbWM_CUkf6-yP9bjFMdSBJhMdxtjvARc6LZt4tb8RzZnw%3D%3D&q=DESAFIO+COLOR+Toner/Cartuchos/Tintas+-+Servi%C3%A7os+de+Copiadora/Encaderna%C3%A7%C3%A3o/Plastifica%C3%A7%C3%A3o/Digitaliza%C3%A7%C3%A3o+-+Carimbos+Reviews&sa=X&ved=2ahUKEwiS_e2egruSAxXvCrkGHSJrGaIQ0bkNegQIJBAF&biw=1528&bih=738&dpr=1.25&aic=0"
               target="_blank"
               rel="noopener noreferrer"
@@ -104,17 +128,11 @@ const Testimonials = () => {
                       </p>
 
                       <div className="flex items-center gap-3 pt-4 border-t border-border">
-                        {testimonial.image ? (
-                          <img
-                            src={testimonial.image}
-                            alt={testimonial.name}
-                            className="w-12 h-12 rounded-full object-cover"
-                          />
-                        ) : (
-                          <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shrink-0">
-                            {testimonial.name.charAt(0).toUpperCase()}
-                          </div>
-                        )}
+                        <UserAvatar
+                          name={testimonial.name}
+                          image={testimonial.image}
+                        />
+
                         <div>
                           <p className="font-semibold text-foreground text-sm">
                             {testimonial.name}
