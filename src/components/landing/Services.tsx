@@ -6,7 +6,7 @@ import {
   Sparkles,
   Tag,
   Smartphone,
-  Wrench,
+  Paperclip
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -65,10 +65,10 @@ const services = [
     color: "rainbow-red",
   },
   {
-    icon: Wrench,
-    image: "/servicos.png",
-    title: "Serviços para Celular",
-    description: "Manutenção e reparos de smartphones e tablets.",
+    icon: Paperclip,
+    image: "/papelaria.png",
+    title: "Papelaria e Diversos",
+    description: "Itens de papelaria, cadernos, agendas e diversos.",
     color: "rainbow-orange",
   },
 ];
