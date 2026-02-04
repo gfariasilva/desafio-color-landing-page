@@ -84,3 +84,6 @@ Automatic deployment is set up. Pushing to the `main` branch will trigger a work
 ├── tailwind.config.js   # Tailwind customization
 └── package.json         # Dependencies and scripts
 ```
+
+### 4. Architecture Diagram
+![arch_diagram](./public/arquitetura.png)
